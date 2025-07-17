@@ -1,0 +1,129 @@
+/* Style halaman secara keseluruhan */
+body {
+    font-family: "Gill Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lavender; /* Warna latar belakang lembut */
+    color: #333;
+}
+
+/* Style judul halaman */
+h1 {
+    text-align: center;
+    color: #6c63ff;
+    font-size: 24px;
+    margin-top: 20px;
+    
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: Georgia, serif;
+}
+
+
+/* Style tombol */
+button {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin: 10px 5px;
+}
+
+.button-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Jarak antar tombol */
+    padding: 20px;
+}
+
+
+button:hover {
+    background-color: #5750d7;
+    transform: translateY(-2px);
+}
+
+/* Style container tabel */
+.table-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 80%; /* Membatasi lebar tabel maksimal 80% dari layar */
+    border-radius: 10px;
+    overflow-x: auto; /* Scroll horizontal untuk tabel yang besar */
+}
+
+/* Style tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background-color: #fff;
+    margin: 0 auto;
+    table-layout: auto; /* Lebar kolom otomatis sesuai konten */
+}
+
+table th, table td {
+    padding: 10px 8px; /* Padding lebih kecil */
+    border: 1px solid #ddd;
+    text-align: center;
+    word-wrap: break-word; /* Membungkus teks panjang */
+}
+
+table th {
+    background-color: #6c63ff;
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #f9f9f9;
+}
+
+/* Warna baris genap */
+table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+/* Efek hover */
+table tr:hover {
+    background-color: #e6e6e6;
+    cursor: pointer;
+}
+
+/* Style link di tabel */
+table td a {
+    color: #6c63ff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+table td a:hover {
+    color: #5750d7;
+    text-decoration: underline;
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .table-container {
+        max-width: 95%; /* Mengurangi margin di layar kecil */
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    table th, table td {
+        padding: 8px 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+}
