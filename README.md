@@ -7,6 +7,18 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Sistem KRS Mahasiswa
+
+Sistem Informasi Kartu Rencana Studi berbasis Laravel untuk manajemen perkuliahan. Aplikasi ini memfasilitasi mahasiswa dalam pengisian KRS, dosen, serta mengatur tahun akademik serta data pengguna.
+
+## Fitur Utama
+
+- Role-based login: Mahasiswa, Dosen
+- Pengisian dan pengelolaan KRS
+- Manajemen tahun akademik 
+- Otentikasi Laravel Breeze 
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
